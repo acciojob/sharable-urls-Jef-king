@@ -7,7 +7,7 @@ document.querySelector("button").addEventListener("click",()=>{
 	update=`https://localhost:8080/?name=${name}&year=${year}`;
 	}else if(name!=''){
 			update=`https://localhost:8080/?name=${name}`;
-	}else if(update!=''){
+	}else if(year!=''){
 			update=`https://localhost:8080/?year=${year}`;
 	}else {
 			update=`https://localhost:8080/`;
