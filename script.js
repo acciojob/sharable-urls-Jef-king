@@ -3,7 +3,10 @@ function printr(){
 let x=document.getElementById('name').value.trim();
 let y=document.getElementById('year').value.trim();
 let r=document.querySelector('h3');
-	if(x==''){
+	if(y=='' && x==''){
+		r.textContent="https://localhost:8080/"
+		return;
+	} else if(x==''){
 		r.textContent="https://localhost:8080/?year="+y;
 		return;
 	}else if(y==''){
